@@ -1,12 +1,15 @@
 import type { NextConfig } from "next";
 
-const isProd = process.env.NODE_ENV === "production";
-const repoName = "nextjs-example";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+const safeBasePath = basePath && basePath.startsWith("/") ? basePath : "";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: isProd ? `/${repoName}` : "",
-  assetPrefix: isProd ? `/${repoName}/` : "",
+  basePath: safeBasePath,
+  assetPrefix: safeBasePath,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: process.env.NEXT_PUBLIC_BASE_PATH,
+  },
 };
 
 export default nextConfig;

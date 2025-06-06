@@ -1,3 +1,4 @@
+import { withBasePath } from "@/lib/utils";
 import Image from "next/image";
 
 export default function Home() {
@@ -28,7 +29,7 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <Image
-              src="/assets/veecode.png"
+              src={withBasePath("/assets/veecode.png")}
               alt="Vercel logomark"
               width={20}
               height={20}
@@ -48,7 +49,7 @@ export default function Home() {
       </main>
       <Image
         aria-hidden
-        src="/assets/bg.svg"
+        src={withBasePath("/assets/bg.svg")}
         alt="bg"
         width={16}
         height={16}

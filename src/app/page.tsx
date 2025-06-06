@@ -28,7 +28,7 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <Image
-              src="/veecode.png"
+              src="/assets/veecode.png"
               alt="Vercel logomark"
               width={20}
               height={20}
@@ -48,7 +48,7 @@ export default function Home() {
       </main>
       <Image
         aria-hidden
-        src="/bg.svg"
+        src="/assets/bg.svg"
         alt="bg"
         width={16}
         height={16}

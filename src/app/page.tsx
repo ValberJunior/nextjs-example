@@ -32,6 +32,7 @@ export default function Home() {
               alt="Vercel logomark"
               width={20}
               height={20}
+              unoptimized
             />
             Visit our site
           </a>
@@ -52,6 +53,7 @@ export default function Home() {
         width={16}
         height={16}
         className="absolute w-[100vw] bottom-0 left-0 opacity-60 z-0"
+        unoptimized
       />
     </div>
   );

@@ -51,7 +51,7 @@ export default function Home() {
         alt="bg"
         width={16}
         height={16}
-        className="absolute w-[100vw] top-[-15%] left-0 opacity-60 z-0"
+        className="absolute w-[100vw] bottom-0 left-0 opacity-60 z-0"
       />
     </div>
   );
